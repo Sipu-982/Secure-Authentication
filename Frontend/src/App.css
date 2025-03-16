@@ -1,0 +1,18 @@
+.back-img{
+  background-image: url('./assets/Tiger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: moveUp 20s linear infinite alternate-reverse both;
+}
+.background{
+  background: rgba(0, 0, 0, 0.9);
+}
+
+@keyframes moveUp{
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
