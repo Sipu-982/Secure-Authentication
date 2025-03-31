@@ -35,7 +35,7 @@
     color: rgb(0, 17, 254);
 }
 .data-field input:focus{
-    border-bottom-color: rgb(87, 104, 74);
+    border-bottom-color: rgb(7, 244, 90);
 }
 
 ::placeholder{

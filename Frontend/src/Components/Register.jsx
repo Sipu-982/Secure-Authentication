@@ -26,8 +26,8 @@ const navigate=useNavigate();
 
     if (!phone.trim()) {
       newErrors.phone = "Phone number is required";
-    } else if (!/^\d{10,15}$/.test(phone)) {
-      newErrors.phone = "Phone number should be 10-15 digits";
+    } else if (phone.length!=10) {
+      newErrors.phone = "Phone number should be 10 digits";
     }
 
     if (!age.trim()) {

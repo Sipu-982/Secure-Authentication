@@ -28,6 +28,14 @@ const Login = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
+  // Function to clear form fields
+  const clearForm = () => {
+    setFullname("");
+    setEmail("");
+    setPassword("");
+    setErrors({});
+  };
+
     const Submit = async (e) => {
       e.preventDefault();
       if (validateForm()) {
@@ -40,6 +48,7 @@ const Login = () => {
           console.log(result);
         if(result.data==="Success"){
           alert("Login Successfull!");
+      clearForm();
           navigate('/')
         }
         else{
